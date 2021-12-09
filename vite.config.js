@@ -17,8 +17,8 @@ export default () => {
                 includeAssets: ['/favicon.png'],
                 strategies: 'injectManifest',
                 manifest: {
-                    name: 'Ahir Samaj Vadodara',
-                    short_name: 'Ahir Samaj',
+                    name: 'PWA Long Name',
+                    short_name: 'PWA Short Name',
                     theme_color: '#ffffff',
                     start_url: '/',
                     display: 'standalone',
