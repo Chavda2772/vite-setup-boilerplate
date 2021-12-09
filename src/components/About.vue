@@ -1,16 +1,27 @@
 <template>
-    <h1 class="font-bold text-2xl">About {{ name }}</h1>
+    <!-- UserName From Store -->
+    <h1 class="font-extrabold text-3xl mb-6">About</h1>
+    <p class="mb-6">{{ getName }}</p>
 </template>
 
-<script setup>
-import { computed } from 'vue'
-import { useStore } from 'vuex'
-
-const store = useStore()
-
-const name = computed(() => {
-    return store.state.user.name
-})
+<script>
+export default {
+    name: 'EmptyView',
+    data() {
+        return {
+            newName: '',
+        }
+    },
+    computed: {
+        getName: function () {
+            return this.$store.state.user.name
+        },
+    },
+}
 </script>
 
-<style></style>
+<style scoped>
+a {
+    color: #42b983;
+}
+</style>
