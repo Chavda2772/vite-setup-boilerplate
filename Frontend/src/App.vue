@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Spinner from './components/Spinner.vue'
+import Spinner from './components/SpinnerWrapper.vue'
 import ReloadPWA from './components/ReloadPWA.vue'
 
 export default {
